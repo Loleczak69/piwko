@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+
+    <style>
+        header, h2{
+            background-color: aqua;
+            color: red;
+        }
+        .nazwaKlasy{
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="style/layout.css">
+    <link rel="stylesheet" href="style/menuPionowe.css">
+    <link rel="stylesheet" href="style/form.css">
+
+
+</head>
+<body>
+    <header style="background-color: #ecec41; color: rgb(11, 37, 206);" >
+        <h1>Strona o programowaniu</h1>
+    </header>
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li> <a href="index.html"> Strona główna </a> </li>
+            <li><a href="http://www.put.poznan.pl" target="_blank">
+                Politechnika Poznańska</a></li>
+            <li><a href="artykul.html">Artykuł</a></li>
+            <li><a href="tabela.html">Tabela</a></li>
+            <li><a href="formularz.html">Formularz</a></li>
+            <li><a href="JavaScript_podstawy.html">JavaScript - podstawy</a></li>
+            <li><a href="JavaScript_kalkulator.html">JavaScript - kalkulator</a></li>
+            <li><a href="">JavaScript - tabela</a></li>
+            <li><a href="">Canvas</a></li>
+
+        </ul>
+    </nav>
+    <article>
+    <h2>Oblicz pole i obwód prostokąta</h2>
+    <p>Proszę wprowadzić dane do formularza zgodnie z rysunkiem</p>
+    <figure>    
+        <img src="images/prostokat.jpg" alt="prostokat">
+        <figcaption>Prostokat</figcaption>
+    </figure>
+    <form action="#">
+        <label for="txtA">A</label>
+        <input type="number" id="txtA" name="txtA" value="10" step="0.5">
+        <br>
+        <label for="txtB">B</label>
+        <input type="number" id="txtB" name="txtB" value="10" step="0.5">
+        <br>
+        <label for="txtPole">Pole prostokata: </label>
+        <input type="text" id="txtPole" name="txtPole" readonly>
+        <div id="divWynik"></div>
+        <input type="button" value="Oblicz pole" onclick="pole(txtA.value, txtB.value)" > 
+        <input type="button" value="Oblicz obwód" id="btnObwod" >  
+    </form>
+
+    <script src="js/kalkulator.js"></script>
+       
+    </article>
+    <aside>
+        <h2>Elementy dodatkowe - JavaScript</h2>
+        <iframe src="kontrolkiJS.html"></iframe>
+    </aside>
+    <footer>
+        autor: Michał Filipak <hr>
+        Politechnika Poznańska <br>
+        ul. Piotrowo 5<br> 61-138 Poznań <br>
+        tel: 61 665 2400
+    </footer>
+  
+    
+</body>
+</html>

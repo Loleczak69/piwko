@@ -1,0 +1,30 @@
+nav ul, nav ul li{
+    display: block;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul{
+    width: 190px;
+    background-color: #9ce;
+    padding: 2px 2px 2px 1px ;
+    border: 4px double red;
+}
+nav ul li{
+    border-bottom: 1px solid red ;
+}
+nav ul a:link, nav ul a:visited{
+    background-color: #27c;
+    width: 166px;
+    display: block;
+    text-decoration: none;
+    padding: 7px;
+    font-weight: bold;
+    color: #def;
+    border-left: 10px solid #25b;
+} 
+nav ul a:hover{
+    background-color: black;
+    border-left: 20px solid rgb(147, 20, 20);
+}

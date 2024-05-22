@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+    <link rel="stylesheet" href="style/layout.css">
+    <link rel="stylesheet" href="style/menuPionowe.css">
+    <link rel="stylesheet" href="style/tabela.css">
+</head>
+<body>
+    <header>
+        <h1>Stron o programowaniu</h1>
+    </header>
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li> <a href="index.html"> Strona główna </a> </li>
+            <li><a href="https://alkoholeswiata24.pl/piwa" target="_blank">
+                alkoholeswiata24</a></li>
+            <li><a href="artykul.html">Piwa jasne</a></li>
+            <li><a href="tabela.html">Piwa ciemne</a></li>
+            <li><a href="">Piwa smakowe</a></li>
+            <li><a href="">Piwa bezalkoholowe</a></li>
+            <li><a href="">Mapa najlepszych piw</a></li>
+            <li><a href="">Formularz</a></li>
+            <li><a href="">Galeria zdjęć</a></li>
+            <li><a href="">Kalkulator</a></li>
+            <li><a href="https://pl.wikipedia.org/wiki/Piwo">Wikipedia-Piwo</a></li>
+        </ul>
+    </nav>
+    <article>
+   
+        <h2>Przykładowa tabela</h2>
+        <table>
+            <tr>
+                <th>Lp.</th>
+                <th>Język programowania</th>
+                <th>Liczba programistów</th>
+            </tr>
+            <tr> <!-- tr*3>td*3  -->
+                <td>1</td>
+                <td>HTML</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>CSS</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>JavaScript</td>
+                <td>2500</td>
+            </tr>
+		
+        </table>
+
+        <h2>Tabela godzin pracy w zakładzie Z1</h2>
+
+        <table>
+            <tr>
+                <th rowspan="2">Lp.</th>
+                <th rowspan="2">Nazwisko</th>
+                <th rowspan="2">Imie</th>
+                <th colspan="8">Godziny</th>
+                
+            </tr>
+            <tr class="godziny">
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+                <th>11</th>
+                <th>12</th>
+                <th>13</th>
+                <th>14</th>
+                <th>15</th>
+            </tr>
+		        <tr>
+                    <td>1</td>
+                    <td>Kowalski</td>
+                    <td>Jan</td>
+                    <td colspan="6" class="praca">8:00-14:00</td>
+                    <td colspan="2" class="wolne"></td>
+                </tr>
+                <tr><td>2</td><td>Nowakowski</td><td>Zenon</td><td colspan="2" class="wolne"></td><td colspan="6" class="praca">10:00-16:00</td></tr>
+                <tr><td>3</td><td>Walkowiak</td><td>Jędrzej</td><td colspan="2" class="wolne"></td><td colspan="6" class="praca">10:00-16:00</td></tr>
+            
+        </table>
+
+
+    </article>
+    <aside>
+        <h2>Elementy dodatkowe - JavaScript</h2>
+        <iframe src="kontrolkiJS.html" frameborder="0"></iframe>
+    </aside>
+    <footer>
+        autor: Michał Filipak <hr>
+        Politechnika Poznańska <br>
+        ul. Piotrowo 5<br> 61-138 Poznań <br>
+        tel: 61 665 2400
+    </footer>
+  
+    
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+
+    <style>
+        header, h2{
+            background-color: aqua;
+            color: red;
+        }
+        .nazwaKlasy{
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="style/layout.css">
+    <link rel="stylesheet" href="style/menuPionowe.css">
+
+</head>
+<body>
+    <header style="background-color: #ecec41; color: rgb(11, 37, 206);" >
+        <h1>Strona o programowaniu</h1>
+    </header>
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li> <a href="index.html"> Strona główna </a> </li>
+            <li><a href="http://www.put.poznan.pl" target="_blank">
+                Politechnika Poznańska</a></li>
+            <li><a href="artykul.html">Artykuł</a></li>
+            <li><a href="tabela.html">Tabela</a></li>
+            <li><a href="formularz.html">Formularz</a></li>
+            <li><a href="JavaScript_podstawy.html">JavaScript - podstawy</a></li>
+            <li><a href="">JavaScript - tabela</a></li>
+            <li><a href="">Canvas</a></li>
+
+        </ul>
+    </nav>
+    <article>
+    
+        <script>
+            // komentarz 
+            /* abc abc
+            abc */
+
+            //  let imie = prompt("Podaj swoje Imie");
+            // alert("Witaj "+ imie +" na stronie o programowaniu :P");
+
+            // document.write("Witaj <b>" +imie +"</b> na stronie o programowaniu :P");
+            // console.log(imie);
+
+            // if(imie=="Michał")
+            // {   
+            //     alert("wygrałeś !!!");
+            // }   
+            // else{
+            //     alert("Miłego dnia");
+            // }
+            document.write("<br>");
+            for (let i = 0; i < 10; i++) {
+                //document.write("Linia tekt nr:" + i +"<br>");
+                // interpolacja string
+                document.write(` Linia tektu nr: ${i} <br> `);
+            }
+
+            let zmienna="Ala ma kota i rybki";
+            document.write("<br>"+zmienna);
+            document.write(`<br> Liczba znaków zmiennej: ${zmienna.length}`);
+            document.write(`<br> ${zmienna.charAt(4)} `);
+            document.write(`<br> Ostatni znak to: 
+                             ${zmienna.charAt(zmienna.length-1)} `);
+            document.write(`<br> ${zmienna.substring(0,3) }`);   
+            document.write(`<br> ${zmienna.substring(7,12) }`);    
+            document.write(`<br> ${zmienna.substring(12) }`);           
+            /*
+            A
+             l
+              a 
+
+                m
+                 a...
+            */
+            document.write("<br><hr>");
+           for (let i = 0; i < zmienna.length; i++) {
+                for (let j = 0; j < i*2 ; j++) {
+                    document.write("&nbsp;");                    
+                }
+                document.write(` ${zmienna.charAt(i)} <br> `);
+           }
+
+           // funkcja
+
+           function nazwa(){
+            alert("to jest funkcja");
+           }
+
+           nazwa();
+
+           document.write("Suma a+ b= "+ dodaj(12,5));
+           function dodaj(a , b){
+            return a+b;
+           }
+
+           // funkcja strzłkowa 
+
+           let funkcjaSrednia= (a,b,c)=>{ return (a+b+c)/3 };
+           document.write(`<br> Srednia wynosi: ${funkcjaSrednia(1,2,3)} `);
+
+        </script>
+    
+    </article>
+    <aside>
+        <h2>Elementy dodatkowe - JavaScript</h2>
+        <iframe src="kontrolkiJS.html"></iframe>
+    </aside>
+    <footer>
+        autor: Michał Filipak <hr>
+        Politechnika Poznańska <br>
+        ul. Piotrowo 5<br> 61-138 Poznań <br>
+        tel: 61 665 2400
+    </footer>
+  
+    
+</body>
+</html>

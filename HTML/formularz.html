@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="style/layout.css">
+    <link rel="stylesheet" href="style/menuPionowe.css">+
+    <link rel="stylesheet" href="style/form.css">
+</head>
+<body>
+    <header>
+        <h1>Strona o programowaniu</h1>
+    </header>
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li> <a href="index.html"> Strona główna </a> </li>
+            <li><a href="http://www.put.poznan.pl" target="_blank">
+                Politechnika Poznańska</a></li>
+            <li><a href="artykul.html">Artykuł</a></li>
+            <li><a href="tabela.html">Tabela</a></li>
+            <li><a href="formularz.html">Formularz</a></li>
+            <li><a href="JavaScript_podstawy.html">JavaScript - podstawy</a></li>
+            <li><a href="dane.html">JavaScript - tabela</a></li>
+            <li><a href="">Canvas</a></li>
+
+        </ul>
+    </nav>
+    <article>
+        <h2>Formularz danych osobowych klienta</h2>
+        <form action="" method="post">
+            <p>
+                Proszę wypełnić ten formularz. <br>
+                Pola oznaczone <em>*</em> są obowiązkowe!
+            </p>
+            <fieldset>
+                <legend>Dane kontaktowe</legend>
+                <label for="imie">Imie<em>*</em> </label>
+                <input type="text" name="imie" id="imie" required autofocus ><br>
+                <label for="nazw">Nazwisko<em>*</em> </label>
+                <input type="text" name="nazw" id="nazw" required><br>
+                <label for="tele">Telefon<em>*</em> </label>
+                <input type="tel" name="tele" id="tele" required 
+                placeholder="(+48) xxx-xxx-xxx"><br>
+                <label for="mail">Mail<em>*</em> </label>
+                <input type="email" name="mail" id="mail" required 
+                placeholder="imie.nazwisko@example.com"><br>
+
+            </fieldset>
+            <fieldset><legend>Szczegółowe dane osobowe</legend>
+                <label for="waga">Waga</label>
+                <input type="number" name="waga" id="waga" 
+                min="0" max="120" step="0.5"><br>
+
+                <label for="Wzrost">Wzrost</label>
+                <input type="range" name="Wzrost" id="Wzrost" 
+                min="0" max="240" step="40" value="180"> (0-240)[cm] <br>
+
+                <label for="pleć">Płeć</label>
+                <select name="pleć" id="pleć">
+                    <option value="kobieta">Kobieta</option>
+                    <option value="mężczyzna">Mężczyzna</option>
+                    <option value="nie podaję" selected>nie podaję</option>
+                </select><br>
+                <label for="dataUr">Data urodzenia</label>
+                <input type="date" name="dataUr" id="dataUr"><br>
+            </fieldset>
+
+            <fieldset><legend>Zainteresowania</legend>
+                Energetyka <input type="checkbox" name="zainteresowania" id=""><br>
+                Elektrotechnika <input type="checkbox" name="zainteresowania" id=""><br>
+                <label for="html">HTML</label>
+                <input type="checkbox" name="zainteresowania" id="html"><br>
+                <label for="css">CSS</label>
+                <input type="checkbox" name="zainteresowania" id="css"><br>
+                <input type="checkbox" name="zainteresowania" id="js">
+                <label for="js">JavaScript</label><br>
+                <input type="checkbox" name="zainteresowania" id="p">
+                <label for="p">Phyton</label><br>
+            </fieldset>
+            <fieldset><legend>Przedział wiekowy</legend>
+                <input type="radio" name="przed_wiek" id="" value="0-18"> 0-18 <br>
+                <input type="radio" name="przed_wiek" id="" checked> 19-30 <br>
+                <input type="radio" name="przed_wiek" id=""> 31-50 <br>
+                <input type="radio" name="przed_wiek" id=""> 51-70 <br>
+                <input type="radio" name="przed_wiek" id=""> więcej <br>
+            </fieldset>
+            <fieldset><legend>Przeglądarka - wybierz lub wpisz</legend>
+                <input type="text" list="przegladarka">
+                <datalist id="przegladarka">
+                    <option value="Edge">Edge</option>
+                    <option value="Chrome">Chrome</option>
+                </datalist>
+            </fieldset>
+
+            <fieldset><legend>Opinia i załącznik</legend>
+                <textarea name="opinia" id="" cols="30" rows="10"
+                placeholder="wpisz opinię"></textarea>
+                <br>
+                <input type="file" name="plik" id="">
+            </fieldset>
+
+            <input type="submit" value="Wyślij">
+            <input type="reset" value="Kasuj formularz">
+        </form>
+    </article>
+    <aside>
+        <h2>Elementy dodatkowe - JavaScript</h2>
+        <iframe src="kontrolkiJS.html" frameborder="0"></iframe>
+    </aside>
+    <footer>
+        autor: Michał Filipak <hr>
+        Politechnika Poznańska <br>
+        ul. Piotrowo 5<br> 61-138 Poznań <br>
+        tel: 61 665 2400
+    </footer>
+  
+    
+</body>
+</html>

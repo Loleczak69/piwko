@@ -1,0 +1,29 @@
+table, th{
+    border: 1px solid gray;
+    color: green;
+    font-family:'Book Antiqua';
+    font-style: italic;
+}
+td{
+    border: 1px solid blue;
+    color: red;
+    font-family: Arial;
+    text-align: center;
+    padding: 5px;
+    font-size: small;
+}
+table, tr, td, th{
+   /* border-collapse: collapse; */
+   border-spacing: 0px;
+}
+.praca{
+    background-color: gray;
+    color: black;
+}
+
+.wolne{
+    background-color: lightblue;
+}
+.godziny th{
+    width: 20px;
+}

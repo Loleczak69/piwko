@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 1024px;
+    margin: auto;
+}
+body>header{
+    width: 1024px;
+    height: 150px;
+    background-color: rgb(38, 104, 158);
+    /*  abc */ 
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+
+nav, article, aside{
+    display: block;
+    height: 800px;
+    float: left;
+}
+nav, aside{
+    width: 210px;
+    background-color: aqua;
+}
+article{
+    width: 604px;
+   /* background-color: bisque; */
+    background: radial-gradient(circle at 500px 500px, #3bf 5%, #9df 15%, #6cf 70%);
+    padding: 15px;
+    overflow: auto;
+}
+body>footer{
+    background-color: black;
+    color: white;
+    padding: 50px 10px 10px 30px;
+    border: 5px solid rgb(62, 24, 230);
+    clear: both;
+}
+body>footer hr{
+    border: 2px dotted red ;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontrolki</title>
+    <style>
+        div.unpressed{
+            width: 180px;
+            height: 40px;
+            background-image: url("images/unpressed.png");
+            background-repeat: no-repeat;
+            text-align: center;
+            padding-top: 10px;
+            font-weight: bold;
+            color: darkblue;
+        }
+        div.pressed{
+            width: 180px;
+            height: 40px;
+            background-image: url("images/pressed.png");
+            background-repeat: no-repeat;
+            text-align: center;
+            padding-top: 10px;
+            font-weight: bold;
+            color: lightblue;
+        }
+        #txtRtext{
+            font-family: monospace;
+        }
+
+    </style>
+    <script src="js/zegar.js"></script>
+  
+</head>
+<body onload="zegar(); startStoper();">
+    <h3><P>Przykład dynamicznych 
+        przycisków z wykorzystaniem JavaScript</P></h3>
+
+        <div class="unpressed" id="btnStart" 
+        onmouseout="podmien('btnStart','unpressed')" 
+        onmouseover="podmien('btnStart','pressed')">Start</div>
+        <div class="unpressed" id="btnStop"
+        onmouseout="podmien('btnStop','unpressed')" 
+        onmouseover="podmien('btnStop','pressed')">Stop</div>
+
+        <input type="text" name="" id="txtRtext" value="ruchomy tekst">
+
+        <hr>
+    <h3>Zegar</h3>    
+    Aktualny czas: <input type="text" id="zegarTXT">
+    Stoper: <input type="text" id="stoperTXT">
+    <input type="button" value="Stop" onclick="stopStoper()">
+    
+    
+    <script src="js/podmienKlase.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+    <link rel="stylesheet" href="style/layout.css">
+</head>
+<body>
+    <header>
+        <h1>Stron o programowaniu</h1>
+    </header>
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li> <a href="index.html"> Strona główna </a> </li>
+            <li><a href="https://alkoholeswiata24.pl/piwa" target="_blank">
+                alkoholeswiata24</a></li>
+            <li><a href="artykul.html">Piwa jasne</a></li>
+            <li><a href="tabela.html">Piwa ciemne</a></li>
+            <li><a href="">Piwa smakowe</a></li>
+            <li><a href="">Piwa bezalkoholowe</a></li>
+            <li><a href="">Mapa najlepszych piw</a></li>
+            <li><a href="">Formularz</a></li>
+            <li><a href="">Galeria zdjęć</a></li>
+            <li><a href="">Kalkulator</a></li>
+            <li><a href="https://pl.wikipedia.org/wiki/Piwo">Wikipedia-Piwo</a></li>
+        </ul>
+    </nav>
+    <article>
+        <section>
+            <header>
+                <h2>Marginesy w CSS</h2>
+                <h3>Wprowadzenie</h3>
+            </header>
+            <p>
+                Każdy element generuje w dokumencie prostokątny obszar zwany pudełkiem (ang. Box model). Pudełko składa się z: 
+            </p>
+            <ol> <!-- ol>li*4  -->
+                <li>Zawartości - "Content" (np. test, obrazek itd.)</li>
+                <li>Otaczających marginesów wewnętrznych - "Padding"</li>
+                <li>Obramowania - "Border"</li>
+                <li>Marginesów - "Margin"</li>
+            </ol>
+            <p>
+            Ostatnie trzy składniki są opcjonalne, tzn. mogą mieć wartość zero. Obwód (zewnętrzny) każdego z czterech obszarów nazywamy krawędzią ("Edge"). Według CSS rozmiary elementu (własności width oraz height) odnoszą się do samej zawartości ("Content") i nie wpływają na pozostałe obszary modelu pudełkowego ("Box model"), które są tworzone na zewnątrz zawartości, ale wewnątrz pudełka. Natomiast tło elementu jest określone dla wszystkich z podanych powyżej obszarów z wyjątkiem marginesów zewnętrznych, które zawsze są przez roczyste ("Transparent"). Zapamiętanie tych krótkich zasad pozwoli Ci uniknąć w przyszłości nieoczeki wanych problemów z wyświetlaniem elementów strony. 
+            Na <a href="#zdjecie">rys. 1</a>  znajdziesz graficzną interpretację pudełkowej budowy elementów w CSS. 
+            </p>
+
+            <figure id="zdjecie">
+                <img src="images/rysunek1.png" alt="Na rysunku przedstawiono marginesy w CSS">
+                <figcaption>
+                    Rysunek 1. Strukutra ramek i marginesów znacznika HTML wg. CSS.
+                </figcaption> 
+            </figure>
+        </section>
+        <section>
+            <h2>Przykład zastosowania wzoru w znacznku figure</h2>
+            <p>
+                Postać czasowa sygnału okresowego zmiennego sinusoidalnie zgodnie z zależnością: 
+            </p>
+            <figure>
+                x(<var>t</var>)=A<sub>m</sub><sup>1</sup>
+                sin(2&pi;f<var>t</var>+&phi;<sub>0</sub>) 
+                
+                <figcaption>gdzie: <br>
+                    <ul>
+                        <li>t - czas,</li>
+                        <li>A<sub>m</sub><sup>1</sup> - amplituda sygnału,</li>
+                        <li>f - częstotliwość sygnału,</li>
+                        <li>&phi;<sub>0</sub> - faza początkowa.</li>
+                    </ul>
+                </figcaption>
+            </figure>
+        </section>
+        <footer>
+            Autorzy artykułu: 
+            <address>
+                Jan Kowalski
+                adres email: <a href="mailto:jan.kowalski@put.poznan.pl">
+                    jan.kowalski@put.poznan.pl</a><br>
+
+                Henryk Nowak
+                adres email: <a href="mailto:henryk.nowak@put.poznan.pl">
+                    wyślij do Henryka N. </a>  <br>
+                Źródło strony: <a href="http://www.wikipedia.pl">wikipedia.pl</a>   
+            </address>
+        </footer>
+    </article>
+    <aside>
+        <h2>Elementy dodatkowe - JavaScript</h2>
+        <iframe src="kontrolkiJS.html" frameborder="0"></iframe>
+    </aside>
+    <footer>
+        autor: Michał Filipak <hr>
+        Politechnika Poznańska <br>
+        ul. Piotrowo 5<br> 61-138 Poznań <br>
+        tel: 61 665 2400
+    </footer>
+  
+    
+</body>
+</html>
